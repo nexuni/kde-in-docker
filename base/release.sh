@@ -3,12 +3,12 @@
 set -eu
 set -o pipefail
 
-RELEASE="$1"
+# RELEASE="$1"
 
-IMAGE="msjpq/kde-vnc:$RELEASE"
+IMAGE="nexi/kde-vnc:galactic"
 
 cd "$(dirname "$0")"
-docker build -t "$IMAGE" . -f "$RELEASE/Dockerfile"
+docker build -t "$IMAGE" . -f "focal/Dockerfile"
 
 if [[ $# -gt 1 ]]
 then
