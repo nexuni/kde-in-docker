@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ros:galactic
 
 ARG S6_VER="2.0.0.1"
 ARG NO_VNC_VER="1.1.0"
