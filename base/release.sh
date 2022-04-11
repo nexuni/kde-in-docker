@@ -5,7 +5,7 @@ set -o pipefail
 
 # RELEASE="$1"
 
-IMAGE="nexi/kde-vnc:galactic"
+IMAGE="nexi/kde-vnc:latest"
 
 docker build -t "$IMAGE" . -f "focal/Dockerfile"
 
