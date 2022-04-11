@@ -7,7 +7,6 @@ set -o pipefail
 
 IMAGE="nexi/kde-vnc:galactic"
 
-cd "$(dirname "$0")"
 docker build -t "$IMAGE" . -f "focal/Dockerfile"
 
 if [[ $# -gt 1 ]]
