@@ -3,11 +3,11 @@
 set -eu
 set -o pipefail
 
-# RELEASE="$1"
+RELEASE="$1"
 
 IMAGE="nexi/kde-vnc:latest"
 
-docker build -t "$IMAGE" . -f "focal/Dockerfile"
+docker build -t "$IMAGE" . -f $RELEASE
 
 if [[ $# -gt 1 ]]
 then
